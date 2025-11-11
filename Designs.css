@@ -262,12 +262,124 @@ body {
 	box-shadow: none;
 }
 
+.CenterProject {
+	text-align: center;
+}
+
 .projects-card {
 	/* reuse .card visuals but ensure it's full width inside main container */
 	padding: 20px;
 	border-radius: var(--radius);
 	background: var(--card);
 	border: 1px solid rgba(0,0,0,0.04);
+}
+
+.AllProjects {
+	display: flex;
+}
+
+.AllProjects:hover .Cardstyle {
+	filter: brightness(0.5) blur(1px);
+  	transform: scale(0.95);
+  	opacity: 0.6;
+}
+
+.CardStyle {
+	width: 150px;
+	height: 200px;
+	background: #3a38cc;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 12px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0, 3);
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+	font-weight: bold;
+	position: relative;
+	transition: 0.4s;
+	left: 0;
+}
+
+.CardStyle:not(:first-child) {
+	margin-left: -50px;
+}
+
+.CardStyle:hover {
+	transform: translateY(-20px);
+	filter: brightness(1) blur(0);
+  	transform: scale(1.1);
+  	opacity: 1;
+  	z-index: 2;
+  	box-shadow: 0 0 20px rgba(255,255,255,0.7);
+}
+
+.CardStyle:hover ~ .card {
+	left: 50px;
+}
+
+#MotherCat {
+	background-image: url(MotherOfAllCat.jpg);
+}
+
+#LoudCat {
+	background-image: url(AnnoyingCat.jpg);
+}
+
+#HalfBlueEyesCat {
+	background-image: url(HalfBlueEyesCat.jpg);
+}
+
+#FemaleCat {
+	background-image: url(FemaleCat.jpg);
+}
+
+#ShyCat {
+	background-image: url(ShyCat.jpg);
+}
+
+#LeagueOfLegends {
+	background-image: url(League.jpg);
+}
+
+#WutheringWaves {
+	background-image: url(WuWa.webp);
+}
+
+#SonsOfTheForest {
+	background-image: url(SonsOfTheForest.avif);
+}
+
+#Deepwoken {
+	background-image: url(Deepwoken.webp);
+}
+
+#MarvelRivals {
+	background-image: url(Rivals.jpg);
+}
+
+.CardStyle p {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+  margin: 0;
+  padding: 10px 0;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  opacity: 0;                   /* hidden by default */
+  transform: translateY(100%);  /* move down */
+  transition: all 0.4s ease;
+}
+
+.CardStyle:hover p {
+  opacity: 1;                  /* visible */
+  transform: translateY(0);    /* slide into place */
 }
 
 /* increase spacing so About, divider, Projects read as distinct blocks */
