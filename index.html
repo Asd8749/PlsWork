@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Basically all about me</title>
+	<link rel="stylesheet" href="designs.css">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+	<meta name="color-scheme" content="light dark">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<h1 class="site-title">My Website</h1>
+			<nav class="main-nav" aria-label="Main navigation">
+				<ul>
+					<li><a href="#about-me">About</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#projects">Pets/Hobbies</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+
+			<button id="themeToggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle light / dark">
+				<span class="sun">☀︎</span><span class="moon">🌙</span>
+			</button>
+		</div>
+	</header>
+
+	<main class="container">
+		<!-- ABOUT section: profile + intro + skills/contact -->
+		<section id="about-section" class="about-me grid">
+			<!-- merged content: About heading + intro + image in one block -->
+			<div class="about-content card">
+				<div class="about-header">
+					<div class="about-intro">
+						<h2>Hello there,</h2>
+						<p class="profile-text">
+							I'm <strong>Kent Jefferson L. de Cadiz</strong>, an aspiring game developer focused on creating engaging gameplay,
+							responsive controls, and polished user experiences. I'm currently learning basic computer languages like C++ and Python. 
+						</p>
+					</div>
+
+					<img src="WebsiteMe.jpg" alt="Profile photo" class="profile-photo">
+				</div>
+
+				<h3 id="skills">Skills</h3>
+				<ul class="skills-list">
+					<li>Languages:  C++, Python (Currently learning these two)</li>
+					<li>Engines: (Nothing yet)</li>
+					<li>Tools: (Nothing yet)</li>
+					<li>Other: (Nothing yet)</li>
+				</ul>
+
+				<h3 id="contact">Contact</h3>
+				<p>
+					Email: kentjeffersondecadiz@gmail.com<br>
+					GitHub: <a href="https://github.com/Asd8749" target="_blank" rel="noopener">https://github.com/Asd8749</a>
+				</p>
+			</div>
+		</section>
+
+		<!-- visible divider between sections -->
+		<hr class="section-divider" aria-hidden="true">
+
+		<!-- PROJECTS section -->
+		<section id="projects-section" class="projects-section">
+			<div class="projects-card card">
+				<h3 id="projects" class="CenterProject">Pets/Cats (Instead of project cuz no projects to show yet)</h3>
+                <div class="AllProjects">
+                        <div class="CardStyle" id="MotherCat">
+							<p>She's currently the eldest cat I have right now and she's the mother of 4. </p>
+						</div>
+                        <div class="CardStyle" id="LoudCat">
+							<p>The eldest daughter and has 1 son. </p>
+						</div>
+                        <div class="CardStyle" id="HalfBlueEyesCat">
+							<p>My favorite cat to pet and most friendly cat I have right now (I love hearing his moews)</p>
+						</div>
+						<div class="CardStyle" id="FemaleCat">
+							<p>She sometimes noisy when we are eating.</p>
+						</div>
+						<div class="CardStyle" id="ShyCat">
+							<p>The cat who don't even wanna go near me or every human (I think).</p>
+						</div>
+						<div class="CardStyle">No picture :(
+							<p>She's like a gangster cat (Always in another place and sometimes fighting other cats when it's time to eat yet).</p>
+						</div>
+			</div>
+		</section>
+				<section id="projects-section" class="projects-section">
+			<div class="projects-card card">
+				<h3 id="projects" class="CenterProject">Games I currently play right :D</h3>
+                <div class="AllProjects">
+                        <div class="CardStyle" id="LeagueOfLegends">
+							<p>My most played game right now. </p>
+						</div>
+                        <div class="CardStyle" id="WutheringWaves">
+							<p>The only gacha game I really grinded. </p>
+						</div>
+                        <div class="CardStyle" id="MarvelRivals">
+							<p>Most played steam game from december 2024 until today. (Got 334.7 hours)</p>
+						</div>
+						<div class="CardStyle" id="SonsOfTheForest">
+							<p>Anyone wanna complete this game? Me and my friends couldn't finish this game cuz we got busy of college.</p>
+						</div>
+						<div class="CardStyle" id="Deepwoken">
+							<p>The deep calls.</p>
+						</div>
+			</div>
+		</section>
+	</main>
+	<script src="Responsive.js"></script>
+</body>
+</html>
